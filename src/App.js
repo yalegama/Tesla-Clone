@@ -1,12 +1,12 @@
-
-import HomePage from './pages/HomePage';
+import React from 'react'
+import Home from './pages/Home'
 
 function App() {
   return (
-    <div className="App">
-      <HomePage/>
+    <div>
+      <Home/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
