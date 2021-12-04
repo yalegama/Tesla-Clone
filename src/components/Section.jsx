@@ -1,4 +1,5 @@
 import { Button, Typography } from '@material-ui/core';
+import { KeyboardArrowDown } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 
@@ -45,6 +46,17 @@ buttonGroup:{
 line:{
     display:'flex',
     flexDirection:'column',
+},
+arrow:{
+    color:'black',
+    display:'flex',
+    justifyContent:'center',
+    marginLeft:910,
+    fontSize:40,
+    cursor:'pointer'
+},
+arrowContainer:{
+    width:'100%'
 }
 }))
 
@@ -77,6 +89,9 @@ function Section() {
         >
             Existing Inventory
         </Button>
+    </div>
+    <div className={classes.arrowContainer}>
+    <KeyboardArrowDown className={classes.arrow}/>
     </div>
     </div>
         </div>

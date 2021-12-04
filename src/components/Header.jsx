@@ -35,6 +35,9 @@ icon:{
     textDecoration:'none',
     margin:10,
     color:'black'
+},
+listList:{
+listStyle:'none'
 }
 }))
 
@@ -47,24 +50,24 @@ function Header() {
                     <a href="">
                         <img 
                         className={classes.logo}
-                        src="/images/logo.svg" alt="" />
+                        src='./images/logo.svg' alt="" />
                     </a>
                 </div>
                 <div className={classes.menu}>
                     <ul className={classes.list}>
-                        <li><a className={classes.menuItems} href="">Model S</a></li>
-                        <li><a className={classes.menuItems} href="">Model 3</a></li>
-                        <li><a className={classes.menuItems} href="">Model X</a></li>
-                        <li><a className={classes.menuItems} href="">Model Y</a></li>
-                        <li><a className={classes.menuItems} href="">Solar Roof</a></li>
-                        <li><a className={classes.menuItems} href="">Solar Panels</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Model S</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Model 3</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Model X</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Model Y</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Solar Roof</a></li>
+                        <li className={classes.listList}><a className={classes.menuItems} href="">Solar Panels</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul className={classes.menuIcon}>
-                        <li><a className={classes.icon} href="">Shop</a></li>
-                        <li><a className={classes.icon} href="">Accoount</a></li>
-                        <li><a className={classes.icon} href="">Menu</a></li>
+                        <li className={classes.listList}><a className={classes.icon} href="">Shop</a></li>
+                        <li className={classes.listList}><a className={classes.icon} href="">Accoount</a></li>
+                        <li className={classes.listList}><a className={classes.icon} href="">Menu</a></li>
                     </ul>
                 </div>
             </Toolbar>
