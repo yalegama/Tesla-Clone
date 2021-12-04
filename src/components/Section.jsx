@@ -1,4 +1,4 @@
-import { Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 
@@ -8,7 +8,7 @@ back:{
       height:'100vh' ,
       width:"100vw",
       backgroundSize:'cover',
-      backgroundPosition:'center'
+      backgroundPosition:'center',
 },
 text:{
     paddingTop:80
@@ -20,6 +20,31 @@ allText:{
 },
 smallText:{
     color:'black',
+},
+button1:{
+    backgroundColor:'black',
+    color:'white',
+    borderRadius:20,
+    height:40,
+    width:"15%",
+    margin:10
+},
+button2:{
+    backgroundColor:'white',
+    borderRadius:20,
+    height:40,
+    width:"15%",
+    margin:10
+},
+buttonGroup:{
+    display:'flex',
+    justifyContent:'center',
+    alignItems:'center',
+    marginTop:500
+},
+line:{
+    display:'flex',
+    flexDirection:'column',
 }
 }))
 
@@ -27,10 +52,8 @@ function Section() {
     const classes=useStyles();
     return (
         <div className={classes.back}>
-            <div style={{ 
-      
-    }}>
-        <div className={classes.allText}>
+            <div className={classes.line}>
+            <div className={classes.allText}>
         <Typography className={classes.text}
         variant="h4"
         >
@@ -43,6 +66,18 @@ function Section() {
         href="">Touchless Delivery</a>
         </Typography>
         </div>
+    <div className={classes.buttonGroup}>
+    <Button
+        className={classes.button1}
+        >
+            Customer Order
+        </Button>
+        <Button
+        className={classes.button2}
+        >
+            Existing Inventory
+        </Button>
+    </div>
     </div>
         </div>
     )

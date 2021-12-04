@@ -25,6 +25,7 @@ list:{
 menuItems:{
     textDecoration:'none',
     margin:14,
+    color:'black',
     
 },
 menuIcon:{
@@ -32,7 +33,8 @@ menuIcon:{
 },
 icon:{
     textDecoration:'none',
-    margin:10
+    margin:10,
+    color:'black'
 }
 }))
 
