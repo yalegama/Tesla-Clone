@@ -6,6 +6,8 @@
 
 ### `npm start`
 
+start this project with enter `npm install` in terminal
+
 # Available Scripts
 
 ### `npm install @material-ui/core`
