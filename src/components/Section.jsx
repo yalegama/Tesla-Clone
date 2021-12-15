@@ -60,7 +60,7 @@ arrowContainer:{
 }
 }))
 
-function Section() {
+function Section({title,description1,description2,description3,button1,button2}) {
     const classes=useStyles();
     return (
         <div className={classes.back}>
@@ -69,13 +69,13 @@ function Section() {
         <Typography className={classes.text}
         variant="h4"
         >
-            Model S
+            {title}
         </Typography>
         <Typography 
         >
-        Order Online for <a 
+       {description1}{description3}<a 
         className={classes.smallText}
-        href="">Touchless Delivery</a>
+        href="">{description2}</a>
         </Typography>
         </div>
     <div className={classes.buttonGroup}>

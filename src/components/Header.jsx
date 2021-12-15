@@ -1,6 +1,7 @@
 import { AppBar, Toolbar } from '@material-ui/core'
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
+import logo from "../images/logo.svg"
 
 const useStyles=makeStyles((theme)=>({
 appBar:{
@@ -15,8 +16,6 @@ toolBar:{
 
 },
 logo:{
-    height:50,
-    width:100,
 },
 list:{
     display:'flex',
@@ -50,7 +49,7 @@ function Header() {
                     <a href="">
                         <img 
                         className={classes.logo}
-                        src='./images/logo.svg' alt="" />
+                        src={logo} alt="" />
                     </a>
                 </div>
                 <div className={classes.menu}>
