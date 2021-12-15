@@ -11,7 +11,7 @@ function Body() {
             description3=""
             button1="Customer Order"
             button2="Existing Inventory"
-
+            backgroundImage="/images/model-s.jpg"
             />
             <Section
             title="Model Y"
@@ -20,6 +20,7 @@ function Body() {
             description3=""
             button1="Customer Order"
             button2="Existing Inventory"
+            backgroundImage="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop"
 
             />
             <Section
@@ -29,6 +30,7 @@ function Body() {
             description3=""
             button1="Customer Order"
             button2="Existing Inventory"
+            backgroundImage="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop"
 
             />
             <Section
@@ -38,6 +40,7 @@ function Body() {
             description3=""
             button1="Customer Order"
             button2="Existing Inventory"
+            backgroundImage="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop"
 
             />
 
@@ -46,6 +49,7 @@ function Body() {
             description3="Lowest Cost Solar Panels in America"
             button1="Customer Order"
             button2="Existing Inventory"
+            backgroundImage="https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop"
 
             />
         </div>

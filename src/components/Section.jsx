@@ -1,15 +1,15 @@
-import { Button, Typography } from '@material-ui/core';
+import { Button, styled, Typography } from '@material-ui/core';
 import { KeyboardArrowDown } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 
-const useStyles=makeStyles((theme)=>({
+const useStyles=makeStyles((theme,props)=>({
 back:{
-    backgroundImage: `url("https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop")`,
       height:'100vh' ,
       width:"100vw",
       backgroundSize:'cover',
       backgroundPosition:'center',
+      backgroundImage:`url("https://tesla-cdn.thron.com/delivery/public/image/tesla/676da95d-942e-414c-8534-f1832f0d4ced/bvlatuR/std/3296x1798/ms-homepage-desktop")`
 },
 text:{
     paddingTop:80
@@ -60,10 +60,12 @@ arrowContainer:{
 }
 }))
 
-function Section({title,description1,description2,description3,button1,button2}) {
+function Section({title,description1,description2,description3,button1,button2,backgroundImage,children, ...props}) {
     const classes=useStyles();
+    const { firstStyle, secondStyle } = useStyles(props);
     return (
-        <div className={classes.back}>
+        <div className="wrap">
+            <div  className={classes.back}>
             <div className={classes.line}>
             <div className={classes.allText}>
         <Typography className={classes.text}
@@ -95,7 +97,10 @@ function Section({title,description1,description2,description3,button1,button2})
     </div>
     </div>
         </div>
+        </div>
     )
 }
 
 export default Section
+
+

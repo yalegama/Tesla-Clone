@@ -1,3 +1,5 @@
+<img src="src/images/screen.png">
+
 # Getting Started with Create React App
 
 ### `npx create-react-app tesla-clone`
